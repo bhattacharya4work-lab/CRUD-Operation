@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CRUD Operation</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <!-- HEADER -->
+        <div class="page-header">
+            <h1>CRUD Operation</h1>
+            <p class="subtitle">Simple User Management Interface</p>
+        </div>
+
+        <!-- LAYOUT -->
+        <div class="layout">
+
+            <!-- FORM CARD -->
+            <div class="card">
+
+                <div class="card-label">
+                    Add User
+                </div>
+
+                <form id="frm">
+
+                    <div class="field">
+                        <label>User Name</label>
+                        <input type="text" required placeholder="Enter Name" id="i1">
+                    </div>
+
+                    <div class="field">
+                        <label>User Age</label>
+                        <input type="number" required placeholder="Enter Age" id="i2">
+                    </div>
+
+                    <div class="btn-row">
+                        <button type="submit" class="btn btn-primary">
+                            Submit
+                        </button>
+
+                        <button type="reset" class="btn btn-secondary">
+                            Reset
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- TABLE CARD -->
+            <div class="card">
+
+                <div class="table-header">
+
+                    <div class="card-label">
+                        Data Table
+                    </div>
+
+                    <div class="count-pill">
+                        Users
+                    </div>
+
+                </div>
+
+                <div class="table-wrap">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>SL</th>
+                                <th>NAME</th>
+                                <th>AGE</th>
+                                <th>EDIT</th>
+                                <th>DELETE</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tbody">
+
+                            <!-- Dynamic Rows -->
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
